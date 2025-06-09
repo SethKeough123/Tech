@@ -1,13 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-  <link rel="shortcut icon" type="image/x-icon" href="https://avatars.githubusercontent.com/u/1342004?s=200&v=4">  
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/x-icon" href="https://avatars.githubusercontent.com/u/1342004?s=200&v=4">  
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Google</title>
+    <style>
+      /* Remove default margin/padding */
+      body, html {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+      }
+      /* Make iframe fill entire viewport */
+      iframe {
+        border: none;      /* No border */
+        width: 100vw;      /* Full viewport width */
+        height: 100vh;     /* Full viewport height */
+        display: block;
+      }
+    </style>
   </head>
   <body>
-    <h1>Welcome to Seth's HTML!</h1>
-    <p>this is a custom html i made</p>
+    <!-- Embed Google in an iframe -->
+    <iframe
+      src="https://www.google.com"
+      allowfullscreen
+      sandbox="allow-same-origin allow-scripts allow-popups allow-forms allow-modals"
+      ></iframe>
   </body>
 </html>
